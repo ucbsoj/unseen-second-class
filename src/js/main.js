@@ -3,7 +3,18 @@ require("./lib/social"); // Twitter intent JS
 
 
 
-var imgReveal = $('#top-quote').offset().top;
+//var imgReveal = $('#top-quote').offset().top;
+
+
+$(".popup-document").each(function(){
+
+	$(this).css("cursor","pointer");
+
+	$(this).on("click", function(){
+		$($(this).data("target")).slideToggle();
+	});
+
+})
 
 
 
@@ -22,11 +33,11 @@ $(document).scroll(function() {
   
   }
 
-  if (scroll > imgReveal){
+  // if (scroll > imgReveal){
 
-  	$(".bg-img").css({"-webkit-filter": "blur(0px)","filter": "blur(0px)" })  
+  // 	$(".bg-img").css({"-webkit-filter": "blur(0px)","filter": "blur(0px)" })  
   
-  } 
+  // } 
 
 
 });
