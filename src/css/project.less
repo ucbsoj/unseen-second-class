@@ -232,8 +232,10 @@ cite{
 }
 
 .rectangle-photo{
-	max-width: 500px;
-	margin:0 auto 1em;
+	Float: right;
+	max-width: 400px;
+	margin-left:50px;
+	margin-right:300px;
 
 	@media @mobile{
 		float:none;
@@ -273,4 +275,17 @@ cite{
 
 .collapse{
 	display: none;
+}
+
+.full-document{
+	max-width: 600px;
+	margin:0 auto 1em;
+
+	.caption{
+		margin-top:0;
+	}
+
+	.credit{
+		color:@gray;
+	}
 }
