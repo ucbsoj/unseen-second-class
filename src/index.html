@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <%= t.include("partials/_meta.html", grunt.data.json) %>
   </head>
@@ -164,25 +165,17 @@
 
         <p>Urioste and her attorney say she promptly informed her supervisor about her injury but never received paperwork KBS was obligated to provide that would have allowed her to start a claim. “I told them that my injuries were very bad, I sent them pictures and they didn’t listen to me,” she said.</p>
 
-        <div class="inline-asset">
-         <img src="./assets/documents/img28.jpg">
-         <div class="caption">Photo caption here.... <span class="credit">Photo by Anne Wernikoff</span></div>
+        <div class="slideshow">
+                    <div class='carousel'>
+                     <div class='carousel-cell'><img src="./assets/documents/img28.jpg"></div>
+                     <div class='carousel-cell'><img src="./assets/documents/img50.jpg"></div>
+                     <div class='carousel-cell'><img src="./assets/documents/img54.jpg"></div>
+                     <div class='carousel-cell'><img src="./assets/documents/img56.jpg"></div>
+                    </div>
         </div>
 
-        <div class="inline-asset">
-         <img src="./assets/documents/img50.jpg">
-         <div class="caption">Photo caption here.... <span class="credit">Photo by Anne Wernikoff</span></div>
-        </div>
-
-        <div class="inline-asset">
-         <img src="./assets/documents/img54.jpg">
-         <div class="caption">Photo caption here.... <span class="credit">Photo by Anne Wernikoff</span></div>
-        </div>
-
-        <div class="inline-asset">
-         <img src="./assets/documents/img56.jpg">
-         <div class="caption">Photo caption here.... <span class="credit">Photo by Anne Wernikoff</span></div>
-        </div>
+        <br>
+        <br>
 
         <p>For many undocumented workers, this letter would be the end of their attempt to navigate the exceedingly tricky workers’ comp system. But Urioste had no plans to back down and her attorney was confident that her paper trail of medical records would give her the upper hand. They were planning to appeal the decision in the hopes of winning enough to pay her medical bills and get her back to work.</p>
 
@@ -387,12 +380,6 @@
       </article>
 
     </section>
-
-
-  
-
-
-
 
 
   <script src="app.js" async></script>  
