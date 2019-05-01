@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/ucbsoj/unseen-second-class.git"
   },
-  "scripts":{
+  "scripts": {
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
