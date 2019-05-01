@@ -9,6 +9,9 @@
       "path": "second-class"
     }
   },
+  "scripts":{
+    "deploy": "gh-pages -d build"
+  },
 
   "production": false,
   "year":"2019",
