@@ -32,7 +32,6 @@ iframe{
   position: sticky;
 
   img{
-		display: block;
 		-o-object-fit: contain;
     object-fit: contain;
 	  width: 100%;
@@ -368,6 +367,17 @@ width:25%;
 border:2px solid red;
 }
 
-.desktop-bg{}
+.desktop-bg{
 
-.mobile-bg{}
+	@media @mobile{
+		display: none;
+	}
+}
+
+.mobile-bg{
+	display: none;
+
+	@media @mobile{
+		display: block;
+	}
+}
