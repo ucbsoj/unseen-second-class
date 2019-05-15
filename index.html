@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
 		
@@ -58,31 +59,19 @@
 
   <body>
 
-  <header class="">
-  <div class="navigation">
-
-    <a href="//www.sfchronicle.com" target="_blank"><div class="logo-link">UNSEEN</div></a>
-
-    <div class="link social email">
-      <a id="mail-icon" title="Share via email" href="mailto:?subject=&body=%0A%0Ahttps://unseen.com/">
-        <i class="fas fa-envelope" aria-hidden="true"></i>
-      </a>
-    </div>
-
-    <div class="link social">
-      <a id="facebook-icon" title="Share on Facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://unseen.com/', 'facebook-share-dialog', 'width=626,height=436'); return false;">
-        <i class="fab fa-facebook"></i>
-      </a>
-    </div>
-
-    <div class="link social">
-      <a id="twitter-icon" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://unseen.com/&text=&hashtags=">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
-
-  </div>
+  <header>
+  <div class="logo-link"><a href="../">UNSEEN</a></div>
+  <div class="tagline">WORKING IN THE SHADOW OF THE GOLDEN STATE</div>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
 </header>
+<div class="menu">
+  <ul>
+    <a href="../#projects"><li>PROJECTS</li></a>
+    <a href="../about"><li>ABOUT</li></a>
+  </ul>
+</div> 
+
 
 
 
@@ -95,7 +84,8 @@
 
       <div class="sticky">
         <div class="sticky cover">
-          <img data-anchor-target="#main-title" data-300-top-bottom="opacity:1;" data-top-bottom="opacity:0;" src="./assets/photos/SecondClass_05.jpg">
+          <img class="desktop-bg" data-anchor-target="#main-title" data-300-top-bottom="opacity:1;" data-top-bottom="opacity:0;" src="./assets/photos/SecondClass_05.jpg">
+          <img class="mobile-bg" data-anchor-target="#main-title" data-300-top-bottom="opacity:1;" data-top-bottom="opacity:0;" src="./assets/photos/Lupe_mobile.jpg">
         </div>
       </div>
       
@@ -115,7 +105,7 @@
 
   
 
-
+ <div id="skrollr-body">
     <section id="first">
      
       <article data-bottom-top=:"opacity:0;" data-500-top-center=:"opacity:1;"> 
@@ -474,20 +464,104 @@
 
     </section>
 
-
+</div>
   <script src="app.js" async></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
   <script>
     var s = skrollr.init({forceHeight:false});
   </script>
-      <footer class="nav-bottom">
+   <div id="bottom-nav">
+        <hr class="bottom-hr" />
+        <div class="bottom-top-info">
+          <div class="bottom-top-title">UNSEEN</div>
+          <div class="bottom-top-deck">WORKING IN THE SHADOW OF THE GOLDEN STATE</div>      
+          <div class="bottom-top-link"><a href="../">Main Site</a></div>
+        </div>  
+        <div class="bottom-stories">
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../uneven-ground"><img src="./assets/footer/uneven-ground.jpg"></a></div>
+            <div class="bottom-title">Uneven Ground</div>
+            <div class="bottom-deck">Women make up just 3% of lucrative male dominated construction jobs – Gender based harassment and discrimination has kept their numbers virtually unchanged half a century after affirmative action.</div>
+            <div class="bottom-button"><a href="../uneve-ground">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../pennies-per-hour"><img src="./assets/footer/pennies-per-hour.jpg"></a></div>
+            <div class="bottom-title">Pennies per Hour</div>
+            <div class="bottom-deck">Most California state prisoners hold jobs that maintain prison facilities for as low as 8 cents an hour. The roles are cost-effective for the state, but critics say they don’t prepare inmates for life on the outside.</div>
+            <div class="bottom-button"><a href="../pennies-per-hour">VIEW PROJECT</a></div>
+          </div>
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../new-path"><img src="./assets/footer/newpath.jpg"></a></div>
+            <div class="bottom-title">NEW PATH</div>
+            <div class="bottom-deck">More than 600,000 inmates are released from prison every year, 35,000 in California. Most are seeking a regular job that can keep a roof over their head - a challenge that’s not easy to overcome.</div>
+            <div class="bottom-button"><a href="../new-path">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../smoke-and-mirrors"><img src="./assets/footer/cannabis.jpg"></a></div>
+            <div class="bottom-title">SMOKE AND MIRRORS</div>
+            <div class="bottom-deck">Cannabis legalization in California is a mess. Tax revenues are lower than expected, the illegal market is thriving and workers on the Central Coast are weighing the benefits and fears of working in a newly permitted industry.</div>
+            <div class="bottom-button"><a href="../smoke-and-mirrors">VIEW PROJECT</a></div>
+          </div>
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../stolen"><img src="./assets/footer/stolen.jpg"></a></div>
+            <div class="bottom-title">STOLEN</div>
+            <div class="bottom-deck">In California, wage theft is underreported, underenforced, and costs workers billions of dollars every year. But, you’re more likely to be prosecuted for stealing a sandwich.</div>
+            <div class="bottom-button"><a href="../stolen">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../second-class"><img src="./assets/footer/second-class.jpg"></a></div>
+            <div class="bottom-title">SECOND CLASS</div>
+            <div class="bottom-deck">California’s almost 2 million undocumented workers face a disproportionately high risk of being killed or injured on the job despite state laws designed to protect them.</div>
+            <div class="bottom-button"><a href="../second-class">VIEW PROJECT</a></div>
+          </div>
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../on-the-line"><img src="./assets/footer/ontheline.jpg"></a></div>
+            <div class="bottom-title">ON THE LINE</div>
+            <div class="bottom-deck">California has some of the nation’s most progressive recycling policies and goals, but the industry’s workers face hazardous conditions—and global market forces are adding to their strain.</div>
+            <div class="bottom-button"><a href="../ont-the-line">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../dirty-business"><img src="./assets/footer/db.jpg"></a></div>
+            <div class="bottom-title">DIRTY BUSINESS</div>
+            <div class="bottom-deck">Workers in California’s waste industry labor far beyond our shores. Plastic recyclers in Minh Khai, Vietnam wrestle with the blessings and curses of an empire built on our trash.</div>
+            <div class="bottom-button"><a href="../dirty-business">VIEW PROJECT</a></div>
+          </div>
+          
+
+        </div>
+      </div>
+
+    <footer class="nav-bottom">
       <div class="footer-content">
 
+      	<div class="footer-title">
+      		<div class="footer-hed">UNSEEN</div>
+      		<div class="footer-deck">WORKING IN THE SHADOW OF THE GOLDEN STATE</div>
+      	</div>
+
+
+      	<div class="footer-about">
+      		<h4><a href="../about">About</a></h4>
+      		<div class="footer-about-text">
+           
+      		</div>
+      	</div>
         
-     </div>
-    </footer>
+     	</div>
 
-
+	    <div class="footer-bottom">
+	  		<div class="footer-bottom-text">© UNSEEN 2019. All Rights Reserved UC BERKELEY GRADUATE SCHOOL OF 	JOURNALISM</div>
+	  	</div>
+	  	
+  	</footer>
   <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
